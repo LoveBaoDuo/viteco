@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
+import { ref, withDefaults } from 'vue'
+withDefaults(defineProps<{ msg?: string }>(), { msg: 'asds' })
+/*ts专有*/
+defineEmits<{
+  (e: 'click', num: number): void
+}>()
 const count = ref(0)
 </script>
 
