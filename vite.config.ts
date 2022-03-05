@@ -60,7 +60,7 @@ export default defineConfig({
     preprocessorOptions: {
       less: {
         charset: false,
-        additionalData: '@import "./src/style/common.less";',
+        // additionalData: '@import "./src/style/common.less";',
       },
     },
   },
